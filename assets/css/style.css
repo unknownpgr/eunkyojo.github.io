@@ -61,7 +61,7 @@ a {
     box-shadow: 3px 3px 3px gray;
 }
 
-#about-container .icon:active {
+.home-about-container .icon:active {
     height: 155px;
 }
 
