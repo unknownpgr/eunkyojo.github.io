@@ -1,62 +1,190 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>Euna Jo</title>
-        <link rel="shortcut icon" type="image/png" href="assets/img/logo.png"/>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-	</head>
-	<body>
-        <div id="navbar">
-			<div class="logo"><a href="./index.html"><img src="assets/img/logo.png"></a></div>
-            <div class="navbar-icon" id="linkedin"><a href="https://www.linkedin.com/in/eunkyojo/" target="_blank" rel="noopener noreferrer"><img src="assets/img/linkedin.png"></a></div>
-            <div class="navbar-icon" id="email"><a href="mailto:eunkyojo@berkeley.edu" target="_blank" rel="noopener noreferrer"><img src="assets/img/email.png"></a></div>
-		</div>
-        <div class="content">
-            <div id="welcome-text"></div>
-            <div id="about-container" class="home-about-container">
-                <a href="./about.html">
-                    <img class="icon" id="about" src="assets/img/me.jpg">
-                    <div class="text" id="about">ABOUT</div>
-                </a>
-            </div>
-            <div id="resume-container" class="home-resume-container">
-                <a href="./resume.html">
-                    <img class="icon" id="resume" src="assets/img/cv.png">
-                    <div class="text" id="resume">RESUME</div>
-                </a>
-            </div>
-            <div id="coffee-container" class="home-coffee-container">
-                <a href="./coffee.html">
-                    <img class="icon" id="coffee" src="assets/img/coffee.png">
-                    <div class="text" id="coffee">COFFEE</div>
-                </a>
-            </div>
-            <div id="music-container" class="home-music-container">
-                <a href="./music.html">
-                    <img class="icon" id="music" src="assets/img/guitar.png">
-                    <div class="text" id="music">MUSIC</div>
-                </a>
-            </div>
-            <div id="sports-container" class="home-sports-container">
-                <a href="./sports.html">
-                    <img class="icon" id="sports" src="assets/img/basketball.png">
-                    <div class="text" id="sports">SPORTS</div>
-                </a>
-            </div>
-            <div id="writing-container" class="home-writing-container">
-                <a href="./writing.html">
-                    <img class="icon" id="writing" src="assets/img/pen.png">
-                    <div class="text" id="writing">WRITING</div>
-                </a>
-            </div>
-            <div id="photography-container" class="home-photography-container">
-                <a href="./photography.html">
-                    <img class="icon" id="photography" src="assets/img/camera.png">
-                    <div class="text" id="photography">PHOTOGRAPHY</div>
-                </a>
-            </div>
+  <head>
+    <title>Euna Jo</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="frame" id="frame-index">
+      <div id="navbar">
+        <div class="logo">
+          <a href="./index.html"><img src="assets/img/logo.png" /></a>
         </div>
-	</body>
-    <script src="assets/script/script.js"></script>
+        <div class="navbar-icon" id="linkedin">
+          <a
+            href="https://www.linkedin.com/in/eunkyojo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="assets/img/linkedin.png"
+          /></a>
+        </div>
+        <div class="navbar-icon" id="email">
+          <a
+            href="mailto:eunkyojo@berkeley.edu"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="assets/img/email.png"
+          /></a>
+        </div>
+      </div>
+      <div class="content">
+        <div id="welcome-text"></div>
+        <div id="about-container" class="home-about-container">
+          <button onclick="showAbout()" class="image-btn">
+            <img class="icon" id="about" src="assets/img/me.jpg" />
+            <div class="text" id="about">ABOUT</div>
+          </button>
+        </div>
+        <div id="resume-container" class="home-resume-container">
+          <a href="./resume.html">
+            <img class="icon" id="resume" src="assets/img/cv.png" />
+            <div class="text" id="resume">RESUME</div>
+          </a>
+        </div>
+        <div id="coffee-container" class="home-coffee-container">
+          <a href="./coffee.html">
+            <img class="icon" id="coffee" src="assets/img/coffee.png" />
+            <div class="text" id="coffee">COFFEE</div>
+          </a>
+        </div>
+        <div id="music-container" class="home-music-container">
+          <a href="./music.html">
+            <img class="icon" id="music" src="assets/img/guitar.png" />
+            <div class="text" id="music">MUSIC</div>
+          </a>
+        </div>
+        <div id="sports-container" class="home-sports-container">
+          <a href="./sports.html">
+            <img class="icon" id="sports" src="assets/img/basketball.png" />
+            <div class="text" id="sports">SPORTS</div>
+          </a>
+        </div>
+        <div id="writing-container" class="home-writing-container">
+          <a href="./writing.html">
+            <img class="icon" id="writing" src="assets/img/pen.png" />
+            <div class="text" id="writing">WRITING</div>
+          </a>
+        </div>
+        <div id="photography-container" class="home-photography-container">
+          <a href="./photography.html">
+            <img class="icon" id="photography" src="assets/img/camera.png" />
+            <div class="text" id="photography">PHOTOGRAPHY</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="frame" id="frame-about">
+      <div id="navbar">
+        <div class="logo">
+          <button class="image-btn" onclick="showIndex()">
+            <img src="assets/img/logo.png" />
+          </button>
+        </div>
+        <div class="navbar-icon" id="linkedin">
+          <a
+            href="https://www.linkedin.com/in/eunkyojo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="assets/img/linkedin.png"
+          /></a>
+        </div>
+        <div class="navbar-icon" id="email">
+          <a
+            href="mailto:eunkyojo@berkeley.edu"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="assets/img/email.png"
+          /></a>
+        </div>
+      </div>
+      <div class="content">
+        <div id="about-container" class="selection">
+          <button
+            class="selection-icon image-btn"
+            onclick="showIndex()"
+            href="./about.html"
+          >
+            <img class="icon" id="about" src="assets/img/me.jpg" />
+          </button>
+          <div class="description">
+            <p>
+              Thank you for visiting my site! My name is Eunkyo "Euna" Jo and I
+              am a student at UC Berkeley studying cognitive science and data
+              science, with a certificate in entrepreneurship and technology. I
+              am looking to pursue a career in product management.
+              <br /><br />
+              I grew up in South Korea and since have traveled to 5 continents,
+              27 countries, and 47 US states, which helped opened my mind up to
+              new perspectives. I am always looking for new opportunities to
+              expand my worldview and creativity. Although I have many interests
+              that lie all across the spectrum, I believe my advantage is in
+              just that - having flexibility and a wide insight. ​<br /><br />
+              Feel free to jump around to check out my past work and hobbies!
+            </p>
+          </div>
+        </div>
+        <div class="menu">
+          <div id="resume-container" class="menu-item">
+            <a href="./resume.html">
+              <img class="icon" id="resume" src="assets/img/cv.png" />
+              <div class="text" id="resume">RESUME</div>
+            </a>
+          </div>
+          <div id="coffee-container" class="menu-item">
+            <a href="./coffee.html">
+              <img class="icon" id="coffee" src="assets/img/coffee.png" />
+              <div class="text" id="coffee">COFFEE</div>
+            </a>
+          </div>
+          <div id="music-container" class="menu-item">
+            <a href="./music.html">
+              <img class="icon" id="music" src="assets/img/guitar.png" />
+              <div class="text" id="music">MUSIC</div>
+            </a>
+          </div>
+          <div id="sports-container" class="menu-item">
+            <a href="./sports.html">
+              <img class="icon" id="sports" src="assets/img/basketball.png" />
+              <div class="text" id="sports">SPORTS</div>
+            </a>
+          </div>
+          <div id="writing-container" class="menu-item">
+            <a href="./writing.html">
+              <img class="icon" id="writing" src="assets/img/pen.png" />
+              <div class="text" id="writing">WRITING</div>
+            </a>
+          </div>
+          <div id="photography-container" class="menu-item">
+            <a href="./photography.html">
+              <img class="icon" id="photography" src="assets/img/camera.png" />
+              <div class="text" id="photography">PHOTOGRAPHY</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const frameIndex = document.getElementById("frame-index");
+      const frameAbout = document.getElementById("frame-about");
+
+      function showAbout() {
+        frameAbout.style.left = "0%";
+        frameIndex.style.left = "-100%";
+      }
+
+      function showIndex() {
+        frameAbout.style.left = "100%";
+        frameIndex.style.left = "0%";
+      }
+
+      showIndex();
+    </script>
+  </body>
+  <script src="assets/script/script.js"></script>
 </html>

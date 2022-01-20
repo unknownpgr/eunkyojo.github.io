@@ -1,280 +1,305 @@
 html {
-    font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #e7e9d0;
-    cursor: url("../img/basketball.png"), auto;
+  background-color: #e7e9d0;
+  cursor: url("../img/basketball.png"), auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .content {
-    text-align: center;
+  text-align: center;
 }
 
 #navbar {
-	height: 100px;
+  height: 100px;
 }
 
 .navbar-icon img {
-	float: right;
-    height: 30px;
-	line-height: 80px;
-	opacity: 1;
-    margin-right: 40px;
-    margin-top: 20px;
+  float: right;
+  height: 30px;
+  line-height: 80px;
+  opacity: 1;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
-.navbar-icon:hover, .logo:hover {
-    opacity: 0.5;
+.navbar-icon:hover,
+.logo:hover {
+  opacity: 0.5;
 }
 
 .logo img {
-    height: 35px;
-    float: left;
-    position: relative;
-    left: 0.5%;
-    padding: 20px;
+  height: 35px;
+  float: left;
+  position: relative;
+  left: 0.5%;
+  padding: 20px;
 }
 
 .home-about-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-about-container .icon {
-    height: 160px;
+  height: 160px;
 }
 
 #about-container .icon {
-    border-radius: 50%;
-    overflow: auto;
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
-    box-shadow: 3px 3px 3px gray;
+  border-radius: 50%;
+  overflow: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  box-shadow: 3px 3px 3px gray;
 }
 
 .home-about-container .icon:active {
-    height: 155px;
+  height: 155px;
 }
 
 .home-resume-container {
-    position: fixed;
-    top: 27%;
-    left: 65%;
-    transform: translate(-40%, -40%);
+  position: absolute;
+  top: 27%;
+  left: 65%;
+  transform: translate(-40%, -40%);
 }
 
 #resume-container .icon {
-    filter: drop-shadow(3px 3px 3px gray);
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .home-resume-container .icon {
-    height: 100px;
+  height: 100px;
 }
 
 .home-resume-container .icon:active {
-    height: 95px;
+  height: 95px;
 }
 
 .home-coffee-container {
-    position: fixed;
-    top: 25%;
-    left: 30%;
-    transform: translate(-40%, -40%);
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-40%, -40%);
 }
 
 #coffee-container .icon {
-    filter: drop-shadow(3px 3px 3px gray);
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .home-coffee-container .icon {
-    height: 100px;
+  height: 100px;
 }
 
 .home-coffee-container .icon:active {
-    height: 95px;
+  height: 95px;
 }
 
 .home-sports-container {
-    position: fixed;
-    top: 60%;
-    left: 22%;
-    transform: translate(-40%, -40%);
+  position: absolute;
+  top: 60%;
+  left: 22%;
+  transform: translate(-40%, -40%);
 }
 
 #sports-container .icon {
-    filter: drop-shadow(3px 3px 3px gray);
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .home-sports-container .icon {
-    height: 100px;
+  height: 100px;
 }
 
 .home-sports-container .icon:active {
-    height: 95px;
+  height: 95px;
 }
 
 .home-music-container {
-    position: fixed;
-    top: 46%;
-    left: 80%;
-    transform: translate(-40%, -40%);
+  position: absolute;
+  top: 46%;
+  left: 80%;
+  transform: translate(-40%, -40%);
 }
 
 #music-container .icon {
-    filter: drop-shadow(3px 3px 3px gray);
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .home-music-container .icon {
-    height: 100px;
+  height: 100px;
 }
 
 .home-music-container .icon:active {
-    height: 95px;
+  height: 95px;
 }
 
 .home-writing-container {
-    position: fixed;
-    top: 78%;
-    left: 70%;
-    transform: translate(-40%, -40%);
+  position: absolute;
+  top: 78%;
+  left: 70%;
+  transform: translate(-40%, -40%);
 }
 
 #writing-container .icon {
-    filter: drop-shadow(3px 3px 3px gray);
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .home-writing-container .icon {
-    height: 100px;
+  height: 100px;
 }
 
 .home-writing-container .icon:active {
-    height: 95px;
+  height: 95px;
 }
 
 .home-photography-container {
-    position: fixed;
-    top: 80%;
-    left: 40%;
-    transform: translate(-40%, -40%);
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-40%, -40%);
 }
 
 #photography-container .icon {
-    filter: drop-shadow(3px 3px 3px gray);
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .home-photography-container .icon {
-    height: 100px;
+  height: 100px;
 }
 
 .home-photography-container .icon:active {
-    height: 95px;
+  height: 95px;
 }
 
 #menu-button:active {
-    background: gray;
+  background: gray;
 }
 
 .icon {
-    transition: transform .1s;
+  transition: transform 0.1s;
 }
 
 .text {
-    color: gray;
-    opacity: 0;
-    padding: 10px;
+  color: gray;
+  opacity: 0;
+  padding: 10px;
 }
 
 .icon:hover {
-    opacity: 0.7;
-    transform: rotate(5deg);
+  opacity: 0.7;
+  transform: rotate(5deg);
 }
 
 .icon:hover + .text {
-    opacity: 1;
+  opacity: 1;
 }
 
-#menu-button, .navbar-item, .icon {
-    cursor: pointer;
+#menu-button,
+.navbar-item,
+.icon {
+  cursor: pointer;
 }
 
 .selection .selection-icon {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 
 .selection .icon {
-    height: 150px;
+  height: 150px;
 }
 
 .selection .icon:active {
-    height: 155px;
+  height: 155px;
 }
 
 .description {
-    background-color: white;
-    padding: 100px 80px 50px 80px;
-    width: 60vw;
-    align-items: center;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    z-index: -1;
-    border-radius: 40px;
-    filter: drop-shadow(3px 3px 3px gray);
+  background-color: white;
+  padding: 100px 80px 50px 80px;
+  width: 60vw;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  z-index: -1;
+  border-radius: 40px;
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 .menu {
-    position: fixed;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -15%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .menu-item a .icon {
-    height: 70px;
+  height: 70px;
 }
 
 .menu-item a .icon:active {
-    height: 75px;
+  height: 75px;
 }
 
 .description a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .description a:hover {
-    opacity: 70%;
+  opacity: 70%;
 }
 
 span {
-    animation: blinker 1s linear infinite;
+  animation: blinker 1s linear infinite;
 }
-  
+
 @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
 #welcome-text {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.image-btn {
+  background: none;
+  border: none;
+}
+
+.frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
 }
